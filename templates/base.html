@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Price data from Portale Offerte {% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <style>
+        .mybins {
+            padding: 10px;
+            margin: 5px;
+            background-color: #f3f3f3
+        }
+
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Price data from Portale Offerte</a>
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('index') }}">Daily CSV files</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('details') }}">Data collection details</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="bg-light p-5 rounded">
+            {% block content %} {% endblock %}
+        </div>
+    </main>
+    <div class="container">
+        <footer class="align-items-center py-3 my-4 border-top">
+            <div class="col-12 text-center">
+                <p class="text-muted">This website is just an experiment. All content may be removed without warning. There is no guarantee on data correctness. Use at your own risk.</p>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

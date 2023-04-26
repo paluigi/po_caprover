@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row p-5">
+    <h1>Data collection details</h1>
+    <p>Data is collected daily from 9 italian cities:</p>
+    <ul>
+        <li>Roma</li>
+        <li>Torino</li>
+        <li>Milano</li>
+        <li>Venezia</li>
+        <li>Bologna</li>
+        <li>Firenze</li>
+        <li>Napoli</li>
+        <li>Bari</li>
+        <li>Palermo</li>
+    </ul>
+    <h3>Gas</h3>
+    <p>We use the following settings to determine yearly price projections for Gas:</p>
+    <ul>
+        <li>Residential utility</li>
+        <li>1400 cubic meters yearly consumption</li>
+        <li>Delivery point class: G6</li>
+    </ul>
+    <h3>Electricity</h3>
+    <p>We use the following settings to determine yearly price projections for Electricity:</p>
+    <ul>
+        <li>Residential utility</li>
+        <li>Main residence</li>
+        <li>2700 kWh yearly consumption</li>
+        <li>3kW installed power</li>
+        <li>Single rate</li>
+    </ul>
+</div>    
+{% endblock %}
